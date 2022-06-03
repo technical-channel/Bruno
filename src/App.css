@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap');
+.App {
+
+  margin:0;
+  padding:0;
+background-image: url("/public/images/bgmain.svg");
+-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+filter: grayscale(100%);
+background-size: cover;
+background-repeat: no-repeat;
+height: 140vh;
+}
+.App:hover{
+  filter: grayscale(0%);
+background-size: cover;
+}
+.firstSection.heading{
+  font-family: 'Maven Pro', sans-serif;
+}
+.secondSection {
+  text-align: center;
+
+  margin: 140px auto 0px;
+}
+.title{
+  font-family: TTOctosquares-Black;
+  font-weight: bold;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -1.05px;
+    margin-bottom: 52px;
+}
+.description{
+  text-align: center;
+  font-family: 'Maven Pro', sans-serif;
+}
+.thirdSection{
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  margin: 180px 0px
+}
+.text {
+     font-size: 24px;
+    width: 30%;
+    font-weight: bold;
+    text-align: -webkit-left;
+    font-weight: 700;
+    margin-left: 50px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .App {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 48vh;
+  }
+  .thirdSection{
+    flex-direction: column;
+  }
+  .text{
+    margin-top:20px;
+    width:80%;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .App {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 48vh !important;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .App {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 28vh !important;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .App {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 38vh !important;
+  }
+}
